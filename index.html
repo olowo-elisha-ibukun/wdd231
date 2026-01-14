@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Home page for Ibukun Olowo Elisha, a BYU-Idaho WDD 231 student learning responsive front-end web development and building professional portfolio projects." />
+  <meta name="author" content="Ibukun Olowo Elisha" />
+
+  <title>WDD 231 | Ibukun Olowo Elisha </title>
+
+  <!-- ✅ Google Fonts + Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <i class="fas fa-gem"></i>
+      <h1>Ibukun Olowo Elisha</h1>
+    </div>
+    <button id="menu-toggle" aria-label="menu" aria-expanded="false">☰</button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="chamber-site-plan.html">Chamber Project</a></li>
+        <li><a href="chamber-description.html">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ✅ About -->
+    <section class="about">
+      <div>
+        <h2>About Me</h2>
+        <p>Hello! I'm Ibukun Elisha Olowo from Ondo, Nigeria. I’m a web developer learning modern front-end design and responsive layouts in WDD 231.</p>
+      </div>
+      <img src="images/profile.jpg" alt="Photo of Hinc" />
+    </section>
+
+    <!-- ✅ Courses Section -->
+    <section class="courses">
+      <h2>Web Development Certificate Courses</h2>
+
+      <!-- Filter buttons -->
+      <div class="filter-buttons">
+        <button id="filter-all" class="active">All</button>
+        <button id="filter-cse">CSE</button>
+        <button id="filter-wdd">WDD</button>
+        <button id="filter-itm">ITM</button>
+      </div>
+
+      <!-- Course cards container -->
+      <div class="course-list-container"></div>
+
+      <p class="total-credits">Total Credits: <span id="total-credits">0</span></p>
+    </section>
+
+    <!-- ✅ Goals -->
+    <section class="goals">
+      <h2>My Learning Goals</h2>
+      <p>I aim to strengthen my understanding of responsive web design, improve my JavaScript skills, and create a professional developer portfolio by the end of this semester.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div="socials">
+      <div class="socials">
+      <a href=“https://github.com/olowo-elisha-ibukun
+" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://wa.me/2349121867656" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; <span id="currentYear"></span> Ibukun Elisha Olowo | Ondo, Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</body>
+</html>
