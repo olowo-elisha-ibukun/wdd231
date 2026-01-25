@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upcoming Events - Ondo Commerce Hub networking events, workshops, and business development opportunities.">
+    <meta name="author" content="Elisha Ibukun Olowo">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Events | Ondo Commerce Hub">
+    <meta property="og:description" content="Join networking events, workshops, and business development opportunities with Ondo Commerce Hub.">
+    <meta property="og:image" content="https://olowo-elisha-ibukun.github.io/wdd231/chamber/images/business-hero.webp">
+    <meta property="og:url" content="https://olowo-elisha-ibukun.github.io/wdd231/chamber/events.html">
+    <meta property="og:type" content="website">
+
+    <title>Events - Ondo Commerce Hub</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+
+    <!-- JavaScript -->
+    <script src="script/directory.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="images/och-logo.png" alt="Ondo Commerce Hub Logo" class="logo" loading="lazy">
+                <div class="logo-text">
+                    <h1>Ondo Commerce Hub</h1>
+                    <p class="tagline">Empowering Business Growth</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Change theme">🌓</button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="events-container">
+            <h1 class="page-title">Upcoming Events</h1>
+            <p class="events-intro">Join us for networking events, workshops, and business development opportunities designed to help you grow your business and connect with fellow entrepreneurs.</p>
+
+            <section class="events-section">
+                <h2>Featured Events</h2>
+                <div class="events-grid">
+                    <div class="event-card featured">
+                        <div class="event-image">
+                            <img src="images/business-hero.webp" alt="Business Networking Event" loading="lazy">
+                        </div>
+                        <div class="event-content">
+                            <h3>Ondo Business Networking Summit</h3>
+                            <p class="event-date">📅 December 15, 2024</p>
+                            <p class="event-time">⏰ 6:00 PM - 9:00 PM</p>
+                            <p class="event-location">📍 Akure Civic Centre</p>
+                            <p class="event-description">Connect with business leaders, learn about new opportunities, and network with entrepreneurs from across Ondo State.</p>
+                            <a href="#" class="event-btn">Register Now</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <h3>Digital Skills Bootcamp</h3>
+                        <p class="event-date">📅 December 22, 2024</p>
+                        <p class="event-time">⏰ 10:00 AM - 2:00 PM</p>
+                        <p class="event-location">📍 Tech Hub Akure</p>
+                        <p class="event-description">Learn essential digital skills for modern business operations including social media marketing and online presence.</p>
+                        <a href="#" class="event-btn">Learn More</a>
+                    </div>
+
+                    <div class="event-card">
+                        <h3>New Year Business Leaders Breakfast</h3>
+                        <p class="event-date">📅 January 5, 2025</p>
+                        <p class="event-time">⏰ 7:00 AM - 9:00 AM</p>
+                        <p class="event-location">📍 Sunview Hotel, Alagbaka</p>
+                        <p class="event-description">Start the new year with inspiration from successful business leaders sharing their strategies for growth.</p>
+                        <a href="#" class="event-btn">Reserve Seat</a>
+                    </div>
+
+                    <div class="event-card">
+                        <h3>Women in Business Workshop</h3>
+                        <p class="event-date">📅 January 12, 2025</p>
+                        <p class="event-time">⏰ 2:00 PM - 5:00 PM</p>
+                        <p class="event-location">📍 Chamber Office</p>
+                        <p class="event-description">Empowering women entrepreneurs with skills, resources, and networking opportunities.</p>
+                        <a href="#" class="event-btn">Join Us</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="events-section">
+                <h2>Event Calendar</h2>
+                <p>Stay updated with our monthly events calendar. Subscribe to our newsletter for reminders and updates.</p>
+                <a href="#" class="calendar-btn">📅 View Full Calendar</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h3>Ondo Commerce Hub</h3>
+                <p>📍 45 Oba Adesida Road, Akure, Ondo State</p>
+                <p>📞 <a href="tel:+2348064567890">+234 806 456 7890</a></p>
+                <p>✉ <a href="mailto:info@ondocommercehub.org">info@ondocommercehub.org</a></p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/olowoelishaibukun" target="_blank" aria-label="LinkedIn">
+                        <img src="images/linkedin.svg" alt="LinkedIn" width="32" height="32">
+                    </a>
+                    <a href="https://x.com/olowoelisha3" target="_blank" aria-label="X (Twitter)">
+                        <img src="images/twitter-x.svg" alt="Twitter" width="32" height="32">
+                    </a>
+                    <a href="https://www.instagram.com/olowo_elisha_ibukun" target="_blank" aria-label="Instagram">
+                        <img src="images/instagram.svg" alt="Instagram" width="32" height="32">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section project-info">
+                <p><strong>WDD 231 Class Project</strong></p>
+                <p>Elisha Ibukun Olowo</p>
+                <p>&copy; <span id="currentYear"></span> Ondo Commerce Hub</p>
+                <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

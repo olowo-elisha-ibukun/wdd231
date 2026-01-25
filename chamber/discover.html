@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Ondo State Commerce Hub -Explore the beauty, culture, and economic attractions of Ondo State.">
+    <meta name="author" content="Elisha Ibukun Olowo">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Discover Ondo State | Ondo Commerce Hub">
+    <meta property="og:description" content="Discover Ondo State Commerce Hub -Explore the beauty, culture, and economic attractions of Ondo State.">
+    <meta property="og:image" content="https://olowo-elisha-ibukun.github.io/wdd231/chamber/images/ondo-hero.webp">
+    <meta property="og:url" content="https://olowo-elisha-ibukun.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+    
+    <title>Discover Ondo State- Ondo Commerce Hub</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    
+    <!-- JavaScript with module type -->
+    <script src="script/directory.js" defer></script>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="images/och-logo.png" alt="Ondo Commerce Hub Logo" class="logo" loading="lazy"> 
+                <div class="logo-text">
+                    <h1>Ondo Commerce Hub</h1>
+                    <p class="tagline">Connecting Commerce</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Change theme">
+                    🌓
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="mainNav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+        <li><a href="events.html">Events</a></li>
+    </ul>
+</nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Banner Section -->
+        <section class="discover-hero">
+            <img src="images/ondo-hero.webp" alt="Discover Ondo State Hero" class="discover-hero-image" loading="eager">
+            <div class="discover-hero-overlay">
+                <div class="discover-hero-content">
+                    <h2>Discover Ondo State</h2>
+                    <p>The Sunshine State — nature, culture & commerce all in one place.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="home-container">
+            <!-- Visit Message Section -->
+            <div id="visitMessage" class="visit-message-container">
+                <!-- Message will be populated by JavaScript -->
+            </div>
+
+            <!-- Page Title -->
+            <h2 class="page-title">Attractions & Points of Interest</h2>
+
+            <!-- Attractions Grid -->
+            <div id="attractionsGrid" class="attractions-grid">
+                <!-- Cards will be populated by JavaScript from attractions.mjs -->
+            </div>
+        </div>
+    </main>
+
+<!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container container">
+            <div class="footer-section contact-info">
+                <h3>Ondo Commerce Hub</h3>
+                <p>📍 45 Oba Adesida Road, Akure, Ondo State</p>
+                <p>📞 <a href="tel:+2348064567890">+234 806 456 7890</a></p>
+                <p>✉ <a href="mailto:info@ondocommercehub.org">info@ondocommercehub.org</a></p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/olowoelishaibukun" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <img src="images/linkedin.svg" alt="LinkedIn" width="28" height="28">
+                    </a>
+                    <a href="https://x.com/olowoelisha3" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                        <img src="images/twitter-x.svg" alt="Twitter" width="28" height="28">
+                    </a>
+                    <a href="https://www.instagram.com/olowo_elisha_ibukun" target="_blank" rel="noopener" aria-label="Instagram">
+                        <img src="images/instagram.svg" alt="Instagram" width="28" height="28">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section project-info">
+                <p><strong>WDD 231 Class Project</strong></p>
+                <p>Elisha Ibukun Olowo</p>
+                <p>&copy; <span id="currentYear"></span> Ondo Commerce Hub</p>
+                <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

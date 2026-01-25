@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Final Project Description - Elisha Ibukun Olowo's WDD 231 Portfolio" />
+  <meta name="author" content="Elisha Ibukun Olowo" />
+
+  <title>Final Project - Elisha Ibukun Olowo</title>
+
+  <!-- Google Fonts + Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <i class="fas fa-gem"></i>
+      <h1>Ibukun Olowo Elisha</h1>
+    </div>
+    <button id="menu-toggle" aria-label="menu" aria-expanded="false">☰</button>
+    <nav id="main-nav">
+      <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="chamber/directory.html">Directory</a></li>
+        <li><a href="chamber/index.html">Chamber Project</a></li>
+        <li><a href="chamber-description.html" class="active">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Final Project Description</h2>
+      <p>This is the final project for WDD 231, showcasing the Chamber of Commerce website for Ondo State.</p>
+      <p>The project includes a responsive website with business directory, member information, and interactive features.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="socials">
+      <a href="https://github.com/olowo-elisha-ibukun" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://wa.me/2349121867656" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; <span id="currentYear"></span> Elisha Ibukun Olowo | Ondo, Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+</body>
+</html>
