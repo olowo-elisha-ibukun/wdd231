@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Resources - Access tools, guides, and case studies from Professional Development Hub.">
+    <meta name="author" content="Elisha Ibukun Olowo">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Resources | Professional Development Hub">
+    <meta property="og:description" content="Explore professional resources, guides, and best practices from our community experts.">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:url" content="reviews.html">
+    <meta property="og:type" content="website">
+
+    <title>Resources - Professional Development Hub</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/reviews.js" type="module" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-text">
+                    <h1>Professional Development Hub</h1>
+                    <p class="tagline">Empowering Success</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="reviews.html" class="active">Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="resources-header">
+            <h1>Professional Resources</h1>
+            <p>Access tools, guides, case studies, and best practices from industry experts.</p>
+        </section>
+
+        <div class="resources-container">
+            <section class="resources-section">
+                <h2>Featured Resources</h2>
+                <div id="resources-container">
+                    <!-- Resources loaded here -->
+                    <article class="resource-card">
+                        <h3>Career Development Guide</h3>
+                        <p class="resource-meta">By Community Team · February 2025</p>
+                        <p>A comprehensive guide to advancing your career through skill development, networking, and strategic planning.</p>
+                    </article>
+
+                    <article class="resource-card">
+                        <h3>Networking Best Practices</h3>
+                        <p class="resource-meta">By Professional Team · February 2025</p>
+                        <p>Learn effective strategies to build meaningful professional relationships and expand your network.</p>
+                    </article>
+
+                    <article class="resource-card">
+                        <h3>Industry Trends Report</h3>
+                        <p class="resource-meta">By Research Team · January 2025</p>
+                        <p>Stay updated with the latest trends, opportunities, and challenges in your industry.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="contribution-section">
+                <h2>Share Your Expertise</h2>
+                <p>Contribute your knowledge and help other professionals grow.</p>
+
+                <form id="resource-form">
+                    <label for="r-title">
+                        Resource Title<br>
+                        <input type="text" id="r-title" name="title" placeholder="e.g., How to Master Project Management" required>
+                    </label>
+
+                    <label for="r-author">
+                        Your Name<br>
+                        <input type="text" id="r-author" name="author" placeholder="Enter your name" required>
+                    </label>
+
+                    <label for="r-content">
+                        Description<br>
+                        <textarea id="r-content" name="content" rows="5" placeholder="Share your professional insights and knowledge..." required></textarea>
+                    </label>
+
+                    <button type="submit" class="btn">Submit Resource</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h3>Professional Development Hub</h3>
+                <p>📍 123 Business Avenue, Suite 100</p>
+                <p>📞 <a href="tel:+1234567890">(123) 456-7890</a></p>
+                <p>✉ <a href="mailto:info@professionalhub.com">info@professionalhub.com</a></p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Connect With Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/olowoelishaibukun" target="_blank" aria-label="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://x.com/olowoelisha3" target="_blank" aria-label="X (Twitter)">
+                        <span>X</span>
+                    </a>
+                    <a href="https://www.instagram.com/olowo_elisha_ibukun" target="_blank" aria-label="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section project-info">
+                <p><strong>WDD 231 Class Project</strong></p>
+                <p>Elisha Ibukun Olowo</p>
+                <p>&copy; <span id="currentYear"></span> Professional Development Hub</p>
+                <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+                <p style="margin-top: 1rem;">
+                    <a href="attributions.html" style="color: white; text-decoration: underline;">Attributions</a>
+                </p>
+                <p>
+                    <a href="https://youtu.be/your-video-link" target="_blank" style="color: white; text-decoration: underline;">Watch Demo Video</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('resource-form');
+            const container = document.getElementById('resources-container');
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const title = document.getElementById('r-title').value.trim();
+                const author = document.getElementById('r-author').value.trim();
+                const content = document.getElementById('r-content').value.trim();
+
+                const card = document.createElement('article');
+                card.className = 'resource-card';
+                const now = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+                card.innerHTML = `
+                    <h3>${title}</h3>
+                    <p class="resource-meta">By ${author} · ${now}</p>
+                    <p>${content}</p>
+                `;
+
+                container.prepend(card);
+                form.reset();
+            });
+
+            // Set current year
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
+            // Set last modified
+            document.getElementById('lastModified').textContent = document.lastModified;
+        });
+    </script>
+
+</body>
+</html>
