@@ -1,0 +1,11 @@
+{
+  "reviews": [
+    {
+      "title": "Example Review",
+      "author": "Olowo Elisha Ibukun",
+      "date": "2026-02-11",
+      "rating": "9/10",
+      "content": "Great show — recommended!"
+    }
+  ]
+}

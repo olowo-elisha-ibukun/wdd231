@@ -1,140 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Professional Development Hub - Our mission, vision, and commitment to professional growth.">
-    <meta name="author" content="Elisha Ibukun Olowo">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="About | Professional Development Hub">
-    <meta property="og:description" content="Learn about Professional Development Hub's mission to empower professionals and advance careers.">
-    <meta property="og:image" content="images/logo.webp">
-    <meta property="og:url" content="about.html">
-    <meta property="og:type" content="website">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <title>About - Professional Development Hub</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Learn about AnimeVerse Hub — our mission, features, and dedication to anime fans worldwide.">
+  <meta name="author" content="Olowo Elisha Ibukun">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+  <title>About — AnimeVerse Hub</title>
 
-    <!-- JavaScript -->
-    <script src="scripts/about.js" type="module" defer></script>
+  <!-- Open Graph -->
+  <meta property="og:title" content="About AnimeVerse Hub">
+  <meta property="og:description" content="Discover the mission of AnimeVerse Hub, a platform built for anime guides, reviews, and an immersive modern experience.">
+  <meta property="og:image" content="https://highpriest19.github.io/images/onepiece.jpg">
+  <meta property="og:url" content="https://highpriest19.github.io/about.html">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
 </head>
 
-<body>
+<body class="siteplan">
 
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <div class="logo-section">
-                <div class="logo-text">
-                    <h1>Professional Development Hub</h1>
-                    <p class="tagline">Empowering Success</p>
-                </div>
-            </div>
-            <div class="header-right">
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-    </header>
+<header>
+  <div class="logo">AnimeVerse Hub</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- Navigation -->
-    <nav id="mainNav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="reviews.html">Resources</a></li>
-        </ul>
-    </nav>
+<section class="hero">
+  <h1>About AnimeVerse Hub</h1>
+  <p>We curate reviews, recommendations, and character guides for anime fans.</p>
+</section>
 
-    <!-- Main Content -->
-    <main>
-        <div class="about-container">
-            <h1 class="page-title">About Professional Development Hub</h1>
+<main>
+  <section class="about card">
+    <h2>Our Mission</h2>
+    <p>
+      AnimeVerse Hub aims to bring together honest reviews and useful guides for
+      anime fans. We focus on readability, fast discovery, and a modern, immersive UI.
+    </p>
 
-            <section class="about-section">
-                <h2>Our Mission</h2>
-                <p>To empower professionals and businesses by fostering collaboration, providing resources, and creating opportunities for sustainable career and business growth.</p>
-            </section>
+    <h2>What We Offer</h2>
+    <ul>
+      <li>Staff and community reviews</li>
+      <li>Favorites and watchlists</li>
+      <li>Search and filter by genre and rating</li>
+      <li>Responsive layout and accessible design</li>
+    </ul>
 
-            <section class="about-section">
-                <h2>Our Vision</h2>
-                <p>To be the leading professional community, recognized for innovation, integrity, and commitment to excellence in supporting career development and business success.</p>
-            </section>
+    <h2>Credits</h2>
+    <p>Created by Elisha Ibukun Olowo (Elisha).</p>
+  </section>
+</main>
 
-            <section class="about-section">
-                <h2>What We Offer</h2>
-                <ul>
-                    <li><strong>Networking Events:</strong> Connect with industry professionals and business leaders</li>
-                    <li><strong>Professional Resources:</strong> Access tools, guides, and best practices</li>
-                    <li><strong>Mentorship Programs:</strong> Learn from experienced professionals</li>
-                    <li><strong>Career Development:</strong> Workshops, certifications, and training programs</li>
-                    <li><strong>Industry Insights:</strong> Stay updated with latest trends and research</li>
-                    <li><strong>Community Support:</strong> Engage with a supportive professional community</li>
-                </ul>
-            </section>
+<footer>
+  <p>&copy; <span id="year"></span> AnimeVerse Hub</p>
+  <p>Last Modified: <span id="last-modified"></span></p>
+</footer>
 
-            <section class="about-section">
-                <h2>Our Values</h2>
-                <p><strong>Integrity:</strong> We conduct our business with highest ethical standards</p>
-                <p><strong>Excellence:</strong> We strive for quality in everything we do</p>
-                <p><strong>Collaboration:</strong> We believe in the power of working together to achieve goals</p>
-                <p><strong>Innovation:</strong> We embrace new ideas and approaches</p>
-            </section>
-
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section contact-info">
-                <h3>Professional Development Hub</h3>
-                <p>📍 123 Business Avenue, Suite 100</p>
-                <p>📞 <a href="tel:+1234567890">(123) 456-7890</a></p>
-                <p>✉ <a href="mailto:info@professionalhub.com">info@professionalhub.com</a></p>
-            </div>
-
-            <div class="footer-section social-media">
-                <h3>Connect With Me</h3>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/olowoelishaibukun" target="_blank" aria-label="LinkedIn">
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://x.com/olowoelisha3" target="_blank" aria-label="X (Twitter)">
-                        <span>X</span>
-                    </a>
-                    <a href="https://www.instagram.com/olowo_elisha_ibukun" target="_blank" aria-label="Instagram">
-                        <span>Instagram</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-section project-info">
-                <p><strong>WDD 231 Class Project</strong></p>
-                <p>Elisha Ibukun Olowo</p>
-                <p>&copy; <span id="currentYear"></span> Professional Development Hub</p>
-                <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
-                <p style="margin-top: 1rem;">
-                    <a href="attributions.html" style="color: white; text-decoration: underline;">Attributions</a>
-                </p>
-                <p>
-                    <a href="https://youtu.be/your-video-link" target="_blank" style="color: white; text-decoration: underline;">Watch Demo Video</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-
+<script src="scripts/main.js" defer></script>
 </body>
 </html>
