@@ -1,117 +1,169 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Professional Development Hub - Empowering professionals and businesses. Join our thriving community for networking, growth, and success.">
+    <meta name="author" content="Elisha Ibukun Olowo">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Professional Development Hub - Home">
+    <meta property="og:description" content="Join the Professional Development Hub. Connect with industry leaders, access resources, and advance your career.">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:url" content="index.html">
+    <meta property="og:type" content="website">
+    
+    <title>Home - Professional Development Hub</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico">
-
-    <!-- SEO -->
-    <meta name="description" content="Discover popular anime shows, character profiles, and reviews — all in a clean and easy-to-navigate hub for anime fans.">
-    <meta name="author" content="Olowo Elisha Ibukun">
-
-    <title>Anime Watch Hub – Explore Anime, Characters & Reviews</title>
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Anime Watch Hub – Explore Anime & Reviews">
-    <meta property="og:description" content="Dive into featured anime, character profiles, and community reviews in a simple and fan-friendly hub.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://highpriest19.github.io/images/yourname.webp">
-    <meta property="og:url" content="https://highpriest19.github.io/index.html">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/index.js" type="module" defer></script>
 </head>
 
-<body class="siteplan">
+<body>
 
-<header>
-    <div class="logo">Anime Watch Hub</div>
-    <nav>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-text">
+                    <h1>Professional Development Hub</h1>
+                    <p class="tagline">Empowering Success</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="mainNav">
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="reviews.html">Resources</a></li>
         </ul>
     </nav>
-</header>
 
-<section class="hero">
-    <h1>Welcome to Anime Watch Hub</h1>
-    <p>Explore top animes, character profiles, and reviews.</p>
-    <a href="about.html" class="btn">Get Started</a>
-</section>
+    <!-- Main Content -->
+    <main>
 
-<main>
-    <section class="featured">
-        <h2>Featured Anime</h2>
-        <div class="cards">
-
-            <div class="card">
-                <img src="images/aot.webp" alt="Attack on Titan anime poster">
-                <h3>Attack on Titan</h3>
-                <p>A battle between humanity and titans — full of action and mystery.</p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Professional Development Hub</h2>
+                <p>Connect with professionals, access resources, and grow your career with our thriving community.</p>
+                <a href="about.html" class="btn">Learn More</a>
             </div>
+        </section>
 
-            <div class="card">
-                <img src="images/demonslayer.webp" alt="Demon Slayer cover">
-                <h3>Demon Slayer</h3>
-                <p>Follow Tanjiro on his journey to save his sister and fight demons.</p>
-            </div>
+        <div class="home-container">
 
-            <div class="card">
-                <img src="images/onepiece.webp" alt="One Piece anime artwork" loading="lazy">
-                <h3>One Piece</h3>
-                <p>Pirates, epic adventures, and the quest for the legendary treasure.</p>
-            </div>
+            <!-- Featured Section -->
+            <section class="featured">
+                <h2>Featured Opportunities</h2>
+                <div class="cards">
 
-            <div class="card">
-                <img src="images/naruto.webp" alt="Naruto anime artwork" loading="lazy">
-                <h3>Naruto</h3>
-                <p>Ninja journeys, intense rivalry, and the pursuit of becoming Hokage.</p>
-            </div>
+                    <div class="card">
+                        <h3>Networking Events</h3>
+                        <p>Connect with industry leaders and expand your professional network through exclusive events.</p>
+                    </div>
 
-            <div class="card">
-    <img src="images/yourname1.webp" alt="Your Name anime artwork" loading="lazy">
-    <h3>Your Name</h3>
-    <p>A touching body-swap romance that weaves fate, memory, and time.</p>
-</div>
+                    <div class="card">
+                        <h3>Professional Resources</h3>
+                        <p>Access tools, guides, and best practices to advance your career and skills.</p>
+                    </div>
 
-            <div class="card">
-                <img src="images/mha.webp" alt="My Hero Academia anime artwork" loading="lazy">
-                <h3>My Hero Academia</h3>
-                <p>Superpowers, heroic battles, and the journey of young aspiring heroes.</p>
-            </div>
+                    <div class="card">
+                        <h3>Mentorship Programs</h3>
+                        <p>Learn from experienced professionals and share your expertise with emerging talent.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Industry Insights</h3>
+                        <p>Stay updated with latest trends, research, and developments in your field.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Community Forums</h3>
+                        <p>Engage in discussions, share ideas, and collaborate with peers from your industry.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Career Development</h3>
+                        <p>Explore career paths, workshops, and certification programs to grow professionally.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about">
+                <h2>About Professional Development Hub</h2>
+                <p>
+                    Professional Development Hub is dedicated to empowering professionals and businesses worldwide.
+                    We provide a comprehensive platform for networking, learning, and career advancement.
+                    Our mission is to foster a community where professionals can connect, collaborate, and grow together.
+                </p>
+            </section>
 
         </div>
-    </section>
 
-    <section class="about">
-        <h2>About Us</h2>
-        <p>
-            Anime Watch Hub helps fans discover anime shows, explore characters,
-            and read honest reviews. Everything is designed to be simple, clean,
-            and easy to navigate.
-        </p>
-    </section>
-</main>
+    </main>
 
-<footer>
-    <p>&copy; 2025 Anime Watch Hub | Designed by Elisha</p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h3>Professional Development Hub</h3>
+                <p>📍 234 Business Avenue, Suite 100</p>
+                <p>📞 <a href="tel:+2348148563803">(234) 912-186-7656</a></p>
+                <p>✉ <a href="mailto:info@professionalhub.com">info@professionalhub.com</a></p>
+            </div>
 
-<!-- JS at the correct position -->
-<script src="scripts/main.js" defer></script>
+            <div class="footer-section social-media">
+                <h3>Connect With Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/olowoelishaibukun" target="_blank" aria-label="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://x.com/olowoelisha3" target="_blank" aria-label="X (Twitter)">
+                        <span>X</span>
+                    </a>
+                    <a href="https://www.instagram.com/olowo_elisha_ibukun" target="_blank" aria-label="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section project-info">
+                <p><strong>WDD 231 Class Project</strong></p>
+                <p>Elisha Ibukun Olowo</p>
+                <p>&copy; <span id="currentYear"></span> Professional Development Hub</p>
+                <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+                <p style="margin-top: 1rem;">
+                    <a href="attributions.html" style="color: white; text-decoration: underline;">Attributions</a>
+                </p>
+                <p>
+                    <a href="https://youtu.be/your-video-link" target="_blank" style="color: white; text-decoration: underline;">Watch Demo Video</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

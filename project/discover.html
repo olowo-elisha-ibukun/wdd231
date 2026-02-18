@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Professional Development Hub - Our mission, vision, and commitment to professional growth.">
+    <meta name="description" content="Discover Professional Development Hub - Explore opportunities, events, and resources for career growth.">
     <meta name="author" content="Elisha Ibukun Olowo">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="About | Professional Development Hub">
-    <meta property="og:description" content="Learn about Professional Development Hub's mission to empower professionals and advance careers.">
+    <meta property="og:title" content="Discover | Professional Development Hub">
+    <meta property="og:description" content="Discover professional opportunities, networking events, and career development resources.">
     <meta property="og:image" content="images/logo.webp">
-    <meta property="og:url" content="about.html">
+    <meta property="og:url" content="discover.html">
     <meta property="og:type" content="website">
 
-    <title>About - Professional Development Hub</title>
+    <title>Discover - Professional Development Hub</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="styles/large.css">
 
     <!-- JavaScript -->
-    <script src="scripts/about.js" type="module" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
 </head>
 
 <body>
@@ -52,48 +52,63 @@
     <nav id="mainNav">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="reviews.html">Resources</a></li>
         </ul>
     </nav>
 
     <!-- Main Content -->
     <main>
-        <div class="about-container">
-            <h1 class="page-title">About Professional Development Hub</h1>
 
-            <section class="about-section">
-                <h2>Our Mission</h2>
-                <p>To empower professionals and businesses by fostering collaboration, providing resources, and creating opportunities for sustainable career and business growth.</p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Discover Opportunities</h2>
+                <p>Explore networking events, professional development programs, and career advancement opportunities.</p>
+            </div>
+        </section>
+
+        <div class="home-container">
+            <!-- Filter and Search Section -->
+            <section class="filter-section">
+                <div class="filter-controls">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Search opportunities by title or description..."
+                        aria-label="Search opportunities"
+                    >
+                    <select id="categoryFilter" class="category-filter" aria-label="Filter by category">
+                        <option value="">All Categories</option>
+                        <option value="Event">Events</option>
+                        <option value="Workshop">Workshops</option>
+                        <option value="Training">Training</option>
+                        <option value="Program">Programs</option>
+                        <option value="Networking">Networking</option>
+                        <option value="Course">Courses</option>
+                    </select>
+                </div>
             </section>
 
-            <section class="about-section">
-                <h2>Our Vision</h2>
-                <p>To be the leading professional community, recognized for innovation, integrity, and commitment to excellence in supporting career development and business success.</p>
+            <!-- Opportunities Section -->
+            <section class="featured">
+                <h2>All Opportunities</h2>
+                <div id="loadingIndicator" class="loading">Loading opportunities...</div>
+                <div id="opportunitiesContainer" class="cards"></div>
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
             </section>
 
-            <section class="about-section">
-                <h2>What We Offer</h2>
-                <ul>
-                    <li><strong>Networking Events:</strong> Connect with industry professionals and business leaders</li>
-                    <li><strong>Professional Resources:</strong> Access tools, guides, and best practices</li>
-                    <li><strong>Mentorship Programs:</strong> Learn from experienced professionals</li>
-                    <li><strong>Career Development:</strong> Workshops, certifications, and training programs</li>
-                    <li><strong>Industry Insights:</strong> Stay updated with latest trends and research</li>
-                    <li><strong>Community Support:</strong> Engage with a supportive professional community</li>
-                </ul>
-            </section>
-
-            <section class="about-section">
-                <h2>Our Values</h2>
-                <p><strong>Integrity:</strong> We conduct our business with highest ethical standards</p>
-                <p><strong>Excellence:</strong> We strive for quality in everything we do</p>
-                <p><strong>Collaboration:</strong> We believe in the power of working together to achieve goals</p>
-                <p><strong>Innovation:</strong> We embrace new ideas and approaches</p>
+            <!-- Favorites Section -->
+            <section class="featured">
+                <h2>My Favorites</h2>
+                <button id="clearFavoritesBtn" class="btn btn-secondary">Clear All Favorites</button>
+                <div id="favoritesContainer" class="favorites-list"></div>
             </section>
 
         </div>
+
     </main>
 
     <!-- Footer -->
