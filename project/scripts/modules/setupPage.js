@@ -5,13 +5,17 @@ export function setupNavigation() {
 
   if (mobileMenuToggle && mainNav) {
     mobileMenuToggle.addEventListener('click', () => {
+      const expanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+      mobileMenuToggle.setAttribute('aria-expanded', String(!expanded));
       mainNav.classList.toggle('active');
+      mobileMenuToggle.classList.toggle('open');
     });
 
     const navLinks = mainNav.querySelectorAll('a');
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         mainNav.classList.remove('active');
+        mobileMenuToggle.classList.remove('open');
       });
 
       // Set active link based on current page

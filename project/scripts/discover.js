@@ -90,7 +90,7 @@ function displayOpportunities(opportunities) {
       <p><strong>Location:</strong> ${opportunity.location}</p>
       <p>${opportunity.description}</p>
       <p class="capacity"><strong>Capacity:</strong> ${opportunity.capacity} spots available</p>
-      <button class="btn favorite-btn" data-id="${opportunity.id}">
+      <button class="btn favorite-btn" data-id="${opportunity.id}" aria-label="${isFavorited(opportunity.id) ? 'Remove from favorites' : 'Add to favorites'}">
         ${isFavorited(opportunity.id) ? '★ Favorited' : '☆ Add to Favorites'}
       </button>
     `;

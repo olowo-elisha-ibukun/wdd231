@@ -13,26 +13,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Get form data using FormData API
       const formData = new FormData(form);
-      
-      // Convert to object
+
+      // Build URL search parameters
+      const params = new URLSearchParams();
+      formData.forEach((value, key) => params.append(key, value));
+
+      // Optionally store data in storage for fallback
       const data = {
         title: formData.get('title'),
         author: formData.get('author'),
         content: formData.get('content'),
         submittedAt: new Date().toISOString()
       };
-
-      // Store in sessionStorage for the thank you page
       sessionStorage.setItem('resourceFormData', JSON.stringify(data));
-      
-      // Also store in localStorage for persistence
       localStorage.setItem('resourceFormData', JSON.stringify(data));
 
       // Reset form
       form.reset();
 
-      // Redirect to thank you page
-      window.location.href = 'thankyou.html';
+      // Redirect to thank you page with query string
+      window.location.href = 'thankyou.html?' + params.toString();
     });
   }
 });

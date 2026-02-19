@@ -13,6 +13,7 @@ body {
     color: #333;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden; /* prevent horizontal scroll */
 }
 
 /* =======================
@@ -57,7 +58,8 @@ header {
     gap: 1rem;
 }
 
-.logo-text h1 {
+.logo-text h1,
+.logo-text .site-title {
     font-size: 1.8rem;
     color: var(--primary-color);
     font-weight: 700;
@@ -156,6 +158,7 @@ nav a.active {
     overflow-x: hidden;
 }
 
+.hero h1,
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -184,6 +187,13 @@ nav a.active {
     font-family: 'Poppins', sans-serif;
 }
 
+/* form placeholder contrast */
+input::placeholder,
+textarea::placeholder {
+    color: var(--muted-text);
+    opacity: 1; /* ensure visible */
+}
+
 /* focus indicator for accessibility */
 a:focus,
 button:focus,
@@ -196,6 +206,42 @@ textarea:focus {
 
 .btn:hover {
     background: var(--primary-color);
+    color: var(--white);
+}
+
+/* utility helpers */
+.mt-1 {
+    margin-top: 1rem;
+}
+.hidden {
+    display: none !important;
+}
+.footer-link {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 5%;
+}
+
+.footer-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.footer-section h3,
+.footer-section p,
+.footer-section a {
+    color: var(--white);
+}
+
+.footer-link {
     color: var(--white);
 }
 

@@ -36,7 +36,7 @@
         <div class="header-container">
             <div class="logo-section">
                 <div class="logo-text">
-                    <h1>Professional Development Hub</h1>
+                    <p class="site-title">Professional Development Hub</p>
                     <p class="tagline">Empowering Success</p>
                 </div>
             </div>
@@ -59,12 +59,12 @@
     </nav>
 
     <!-- Main Content -->
-    <main>
+    <main role="main">
 
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h2>Discover Opportunities</h2>
+                <h1>Discover Opportunities</h1>
                 <p>Explore networking events, professional development programs, and career advancement opportunities.</p>
             </div>
         </section>
@@ -97,7 +97,7 @@
                 <h2>All Opportunities</h2>
                 <div id="loadingIndicator" class="loading">Loading opportunities...</div>
                 <div id="opportunitiesContainer" class="cards"></div>
-                <div id="errorMessage" class="error-message" style="display: none;"></div>
+                <div id="errorMessage" class="error-message hidden"></div>
             </section>
 
             <!-- Favorites Section -->
@@ -141,15 +141,17 @@
                 <p>Elisha Ibukun Olowo</p>
                 <p>&copy; <span id="currentYear"></span> Professional Development Hub</p>
                 <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
-                <p style="margin-top: 1rem;">
-                    <a href="attributions.html" style="color: white; text-decoration: underline;">Attributions</a>
+                <p class="mt-1">
+                    <a href="attributions.html" class="footer-link">Attributions</a>
                 </p>
                 <p>
-                    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" style="color: white; text-decoration: underline;">Watch Demo Video</a>
+                    <a href="videos/demon_slayer.mov" target="_blank" class="footer-link">Watch Demo Video</a>
                 </p>
-                <div class="footer-video" style="margin-top:1rem;">
-                    <iframe width="320" height="180" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Project demo" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="footer-video mt-1">
+                    <video width="320" height="180" controls aria-label="Project demo video">
+                        <source src="videos/demon_slayer.mov" type="video/quicktime">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>

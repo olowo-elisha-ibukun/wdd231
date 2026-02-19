@@ -5,162 +5,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Attributions and Credits for Professional Development Hub">
     <meta name="author" content="Elisha Ibukun Olowo">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Attributions | Professional Development Hub">
+    <meta property="og:description" content="Sources and credits for the Professional Development Hub website.">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:url" content="attributions.html">
+    <meta property="og:type" content="website">
+
     <title>Attributions - Professional Development Hub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        h1 {
-            color: #0066cc;
-        }
-        h2 {
-            color: #333;
-            margin-top: 20px;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .attribution-item {
-            background: white;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-left: 4px solid #0066cc;
-        }
-    </style>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/attributions.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/attributions.js" type="module" defer></script>
 </head>
-<body>
-    <h1>Attributions and Credits</h1>
-    <p>This page acknowledges all sources, references, and tools used in the creation of the Professional Development Hub website.</p>
+<body class="attributions">
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-text">
+                    <p class="site-title">Professional Development Hub</p>
+                    <p class="tagline">Empowering Success</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
-    <h2>Learning Resources & Inspiration</h2>
-    
-    <div class="attribution-item">
-        <strong>Course: WDD 231 - Web Frontend Development</strong>
-        <p>Brigham Young University</p>
-        <p>This project was developed as part of the WDD 231 course curriculum.</p>
-    </div>
-
-    <h2>Design & Color Palette</h2>
-    
-    <div class="attribution-item">
-        <strong>Color Scheme: Professional Blue & Teal</strong>
-        <p>Created using web design principles and accessibility standards (WCAG 2.1)</p>
-        <p>Primary Color: #0066cc (Professional Blue)</p>
-        <p>Secondary Color: #00a6d6 (Bright Teal)</p>
-    </div>
-
-    <h2>Typography</h2>
-    
-    <div class="attribution-item">
-        <strong>Google Fonts</strong>
-        <p><a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></p>
-        <p>Fonts used: Poppins and Inter</p>
-        <p>License: Open Font License</p>
-    </div>
-
-    <h2>Technology & Libraries</h2>
-    
-    <div class="attribution-item">
-        <strong>Fetch API & ES Modules</strong>
-        <p>Native JavaScript APIs for modern web development</p>
-        <p>Documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">MDN Web Docs</a></p>
-    </div>
-
-    <div class="attribution-item">
-        <strong>HTML, CSS, JavaScript (No Frameworks)</strong>
-        <p>This project was built using vanilla HTML, CSS, and JavaScript without external frameworks or libraries like Bootstrap or Tailwind CSS.</p>
-    </div>
-
-    <h2>Data Sources</h2>
-    
-    <div class="attribution-item">
-        <strong>Opportunities & Events Data</strong>
-        <p>Original content created for the Professional Development Hub</p>
-        <p>Data is stored in local JSON format for the project demonstration</p>
-    </div>
-
-    <h2>Web Standards & Best Practices</h2>
-    
-    <div class="attribution-item">
-        <strong>Web Content Accessibility Guidelines (WCAG)</strong>
-        <p><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank">https://www.w3.org/WAI/WCAG21/quickref/</a></p>
-        <p>This website follows WCAG 2.1 level AA accessibility standards</p>
-    </div>
-
-    <div class="attribution-item">
-        <strong>HTML5 & Semantic Markup</strong>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">MDN HTML Documentation</a></p>
-    </div>
-
-    <div class="attribution-item">
-        <strong>Responsive Web Design</strong>
-        <p>Mobile-first approach with responsive breakpoints</p>
-        <p>Tested on various screen sizes (mobile 320px, tablet, desktop)</p>
-    </div>
-
-    <h2>Inspiration & References</h2>
-    
-    <div class="attribution-item">
-        <strong>Professional Website Design Patterns</strong>
-        <p>General web design best practices and patterns from the following sources:</p>
+    <nav id="mainNav" aria-label="Primary navigation">
         <ul>
-            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
-            <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="reviews.html">Resources</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="attribution-item">
-        <strong>Web Development Certificate Courses</strong>
-        <p>The knowledge and techniques used in this project were also gained through ongoing certificate courses (WDD, CSE, ITM) offered by BYU‑Pathway.  The course curriculum provided guidance on HTML, CSS, JavaScript, and responsive design.</p>
-        <!-- example markup from one of the course assignments:
-        <section class="courses">
-          <h2>Web Development Certificate Courses</h2>
-          <div class="filter-buttons">
-            <button id="filter-all" class="active">All</button>
-            <button id="filter-cse">CSE</button>
-            <button id="filter-wdd">WDD</button>
-            <button id="filter-itm">ITM</button>
-          </div>
-        </section>
-        -->
-    </div>
+    <main role="main">
+        <h1>Attributions and Credits</h1>
+        <p>This page acknowledges all sources, references, and tools used in the creation of the Professional Development Hub website.</p>
 
-    <h2>Additional Resources</h2>
-    
-    <div class="attribution-item">
-        <strong>Form Creation & Validation</strong>
-        <p>HTML5 native form elements and JavaScript validation</p>
-    </div>
+        <h2>Learning Resources &amp; Inspiration</h2>
+        
+        <div class="attribution-item">
+            <strong>Course: WDD 231 - Web Frontend Development</strong>
+            <p>Brigham Young University</p>
+            <p>This project was developed as part of the WDD 231 course curriculum.</p>
+        </div>
 
-    <div class="attribution-item">
-        <strong>Local Storage & Session Storage</strong>
-        <p>Browser APIs for client-side data persistence</p>
-    </div>
+        <h2>Design &amp; Color Palette</h2>
+        
+        <div class="attribution-item">
+            <strong>Color Scheme: Professional Blue &amp; Teal</strong>
+            <p>Created using web design principles and accessibility standards (WCAG 2.1)</p>
+            <p>Primary Color: #0066cc (Professional Blue)</p>
+            <p>Secondary Color: #00a6d6 (Bright Teal)</p>
+        </div>
 
-    <div class="attribution-item">
-        <strong>Modal Dialogs & User Interaction</strong>
-        <p>Custom modal implementation using HTML, CSS, and JavaScript</p>
-    </div>
+        <h2>Typography</h2>
+        
+        <div class="attribution-item">
+            <strong>Google Fonts</strong>
+            <p><a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></p>
+            <p>Fonts used: Poppins and Inter</p>
+            <p>License: Open Font License</p>
+        </div>
 
-    <h2>Disclaimer</h2>
-    <p>This is an educational project created for learning purposes as part of the WDD 231 course at Brigham Young University. The content, including all opportunities, events, and organization details, is fictional and created for demonstration purposes only.</p>
+        <h2>Technology &amp; Libraries</h2>
+        
+        <div class="attribution-item">
+            <strong>Fetch API &amp; ES Modules</strong>
+            <p>Native JavaScript APIs for modern web development</p>
+            <p>Documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">MDN Web Docs</a></p>
+        </div>
 
-    <h2>Contact</h2>
-    <p>For questions or concerns about this project, please contact me or visit the BYU Pathway website.</p>
+        <div class="attribution-item">
+            <strong>HTML, CSS, JavaScript (No Frameworks)</strong>
+            <p>This project was built using vanilla HTML, CSS, and JavaScript without external frameworks or libraries like Bootstrap or Tailwind CSS.</p>
+        </div>
 
-    <hr>
-    <p style="text-align: center; color: #666; margin-top: 30px;">
-        &copy; 2026 Professional Development Hub | Educational Project
-    </p>
+        <h2>Data Sources</h2>
+        
+        <div class="attribution-item">
+            <strong>Opportunities &amp; Events Data</strong>
+            <p>Original content created for the Professional Development Hub</p>
+            <p>Data is stored in local JSON format for the project demonstration</p>
+        </div>
+
+        <h2>Web Standards &amp; Best Practices</h2>
+        
+        <div class="attribution-item">
+            <strong>Web Content Accessibility Guidelines (WCAG)</strong>
+            <p><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank">https://www.w3.org/WAI/WCAG21/quickref/</a></p>
+            <p>This website follows WCAG 2.1 level AA accessibility standards</p>
+        </div>
+
+        <div class="attribution-item">
+            <strong>HTML5 &amp; Semantic Markup</strong>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">MDN HTML Documentation</a></p>
+        </div>
+
+        <div class="attribution-item">
+            <strong>Responsive Web Design</strong>
+            <p>Mobile-first approach with responsive breakpoints</p>
+            <p>Tested on various screen sizes (mobile 320px, tablet, desktop)</p>
+        </div>
+
+        <h2>Inspiration &amp; References</h2>
+        
+        <div class="attribution-item">
+            <strong>Professional Website Design Patterns</strong>
+            <p>General web design best practices and patterns from the following sources:</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+            </ul>
+        </div>
+
+        <div class="attribution-item">
+            <strong>Web Development Certificate Courses</strong>
+            <p>The knowledge and techniques used in this project were also gained through ongoing certificate courses (WDD, CSE, ITM) offered by BYU‑Pathway.  The course curriculum provided guidance on HTML, CSS, JavaScript, and responsive design.</p>
+        </div>
+
+        <h2>Additional Resources</h2>
+        
+        <div class="attribution-item">
+            <strong>Form Creation &amp; Validation</strong>
+            <p>HTML5 native form elements and JavaScript validation</p>
+        </div>
+
+        <div class="attribution-item">
+            <strong>Local Storage &amp; Session Storage</strong>
+            <p>Browser APIs for client-side data persistence</p>
+        </div>
+
+        <div class="attribution-item">
+            <strong>Modal Dialogs &amp; User Interaction</strong>
+            <p>Custom modal implementation using HTML, CSS, and JavaScript</p>
+        </div>
+
+        <h2>Disclaimer</h2>
+        <p>This is an educational project created for learning purposes as part of the WDD 231 course at Brigham Young University. The content, including all opportunities, events, and organization details, is fictional and created for demonstration purposes only.</p>
+
+        <h2>Contact</h2>
+        <p>For questions or concerns about this project, please contact me or visit the BYU Pathway website.</p>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h3>Professional Development Hub</h3>
+                <p>📍 234 Business Avenue, Suite 100</p>
+                <p>📞 <a href="tel:+2348148563803">(234) 912-186-7656</a></p>
+                <p>✉ <a href="mailto:info@professionalhub.com">info@professionalhub.com</a></p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Connect With Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/olowoelishaibukun" target="_blank" aria-label="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://x.com/olowoelisha3" target="_blank" aria-label="X (Twitter)">
+                        <span>X</span>
+                    </a>
+                    <a href="https://www.instagram.com/olowo_elisha_ibukun" target="_blank" aria-label="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section project-info">
+                <p><strong>WDD 231 Class Project</strong></p>
+                <p>Elisha Ibukun Olowo</p>
+                <p>&copy; <span id="currentYear"></span> Professional Development Hub</p>
+                <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+                <p class="mt-1">
+                    <a href="attributions.html" class="footer-link">Attributions</a>
+                </p>
+                <p>
+                    <a href="videos/demon_slayer.mov" target="_blank" class="footer-link">Watch Demo Video</a>
+                </p>
+                <div class="footer-video mt-1">
+                    <video width="320" height="180" controls aria-label="Project demo video">
+                        <source src="videos/demon_slayer.mov" type="video/quicktime">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

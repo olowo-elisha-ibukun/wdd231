@@ -1,0 +1,21 @@
+/* Minimal styling for the site plan page */
+body.siteplan {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    line-height: 1.6;
+    padding: 2rem 5%;
+    background: var(--light-bg);
+    color: var(--dark-text);
+}
+
+.siteplan h1 {
+    color: var(--primary-color);
+}
+
+.siteplan h2 {
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+}
+
+.siteplan section {
+    margin-bottom: 2rem;
+}

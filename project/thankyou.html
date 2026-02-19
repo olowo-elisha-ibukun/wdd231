@@ -57,10 +57,10 @@
     </nav>
 
     <!-- Main Content -->
-    <main>
+    <main role="main">
         <section class="hero">
             <div class="hero-content">
-                <h2>Thank You!</h2>
+                <h1>Thank You!</h1>
                 <p>Your submission has been received successfully.</p>
             </div>
         </section>
@@ -124,15 +124,17 @@
                 <p>Elisha Ibukun Olowo</p>
                 <p>&copy; <span id="currentYear"></span> Professional Development Hub</p>
                 <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
-                <p style="margin-top: 1rem;">
-                    <a href="attributions.html" style="color: white; text-decoration: underline;">Attributions</a>
+                <p class="mt-1">
+                    <a href="attributions.html" class="footer-link">Attributions</a>
                 </p>
                 <p>
-                    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" style="color: white; text-decoration: underline;">Watch Demo Video</a>
+                    <a href="videos/demon_slayer.mov" target="_blank" class="footer-link">Watch Demo Video</a>
                 </p>
-                <div class="footer-video" style="margin-top:1rem;">
-                    <iframe width="320" height="180" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Project demo" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="footer-video mt-1">
+                    <video width="320" height="180" controls aria-label="Project demo video">
+                        <source src="videos/demon_slayer.mov" type="video/quicktime">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>
