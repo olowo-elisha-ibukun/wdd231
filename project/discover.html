@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="header-right">
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
                     <span></span><span></span><span></span>
                 </button>
             </div>
@@ -49,7 +49,7 @@
     </header>
 
     <!-- Navigation -->
-    <nav id="mainNav">
+    <nav id="mainNav" aria-label="Primary navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html" class="active">Discover</a></li>
@@ -145,8 +145,12 @@
                     <a href="attributions.html" style="color: white; text-decoration: underline;">Attributions</a>
                 </p>
                 <p>
-                    <a href="https://youtu.be/your-video-link" target="_blank" style="color: white; text-decoration: underline;">Watch Demo Video</a>
+                    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" style="color: white; text-decoration: underline;">Watch Demo Video</a>
                 </p>
+                <div class="footer-video" style="margin-top:1rem;">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Project demo" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </footer>

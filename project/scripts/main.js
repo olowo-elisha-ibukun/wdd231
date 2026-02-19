@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mobileMenuToggle) {
         mobileMenuToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
+            const isOpen = mainNav.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('open', isOpen);
+            mobileMenuToggle.setAttribute('aria-expanded', isOpen);
         });
 
         // Close menu when a link is clicked
@@ -15,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mainNav.classList.remove('active');
+                mobileMenuToggle.classList.remove('open');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
             });
         });
     }
