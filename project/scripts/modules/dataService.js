@@ -1,8 +1,9 @@
 // dataService.js - Handles data fetching from JSON file
 export async function fetchOpportunities() {
   try {
-    // compute path relative to this module, works even if page is moved
-    const dataUrl = new URL('../data/opportunities.json', import.meta.url);
+    // compute path relative to this module (two levels up to project root)
+    // dataService.js lives in scripts/modules, so ../../data is correct
+    const dataUrl = new URL('../../data/opportunities.json', import.meta.url);
     const response = await fetch(dataUrl);
     
     if (!response.ok) {
